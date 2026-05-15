@@ -1,0 +1,3 @@
+Test Case: Add New Employee - Male
+Employee Code: 6957
+Employee added successfully from JSON data

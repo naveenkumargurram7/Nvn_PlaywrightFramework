@@ -1,0 +1,110 @@
+{
+  "personalDetails": [
+    {
+      "testCaseId": "PD001",
+      "testCaseName": "Add Personal Details for Male Employee",
+      "lastName": "Johnson",
+      "firstName": "Sarah",
+      "middleName": "Marie",
+      "nickName": "Sara",
+      "ssnNo": "456-78-9123",
+      "nationality": "NAT002",
+      "sinNo": "456789123",
+      "dateOfBirth": "1992-03-20",
+      "otherID": "OTH789456",
+      "maritalStatus": "Unmarried",
+      "isSmoker": false,
+      "gender": "female",
+      "driversLicense": "DL987654321",
+      "licenseExpiryDate": "2029-08-15",
+      "militaryService": "3 Years",
+      "ethnicRace": "ETH001"
+    },
+    {
+      "testCaseId": "PD002",
+      "testCaseName": "Add Personal Details for Female Employee",
+      "lastName": "Williams",
+      "firstName": "Robert",
+      "middleName": "Joseph",
+      "nickName": "Rob",
+      "ssnNo": "123-45-6789",
+      "nationality": "NAT002",
+      "sinNo": "987654321",
+      "dateOfBirth": "1990-05-15",
+      "otherID": "OTH123456",
+      "maritalStatus": "Married",
+      "isSmoker": true,
+      "gender": "male",
+      "driversLicense": "DL123456789",
+      "licenseExpiryDate": "2030-12-31",
+      "militaryService": "2 Years",
+      "ethnicRace": "ETH001"
+    },
+    {
+      "testCaseId": "PD003",
+      "testCaseName": "Add Personal Details for Divorced Employee",
+      "lastName": "Brown",
+      "firstName": "Michael",
+      "middleName": "James",
+      "nickName": "Mike",
+      "ssnNo": "789-12-3456",
+      "nationality": "NAT002",
+      "sinNo": "321654987",
+      "dateOfBirth": "1988-07-10",
+      "otherID": "OTH654321",
+      "maritalStatus": "Divorced",
+      "isSmoker": false,
+      "gender": "male",
+      "driversLicense": "DL456789123",
+      "licenseExpiryDate": "2028-06-20",
+      "militaryService": "5 Years",
+      "ethnicRace": "ETH001"
+    },
+    {
+      "testCaseId": "PD004",
+      "testCaseName": "Add Personal Details for Employee with Military Service",
+      "lastName": "Davis",
+      "firstName": "Jennifer",
+      "middleName": "Anne",
+      "nickName": "Jen",
+      "ssnNo": "321-54-9876",
+      "nationality": "NAT002",
+      "sinNo": "654321789",
+      "dateOfBirth": "1995-11-25",
+      "otherID": "OTH987654",
+      "maritalStatus": "Married",
+      "isSmoker": false,
+      "gender": "female",
+      "driversLicense": "DL789123456",
+      "licenseExpiryDate": "2031-03-10",
+      "militaryService": "6 Years",
+      "ethnicRace": "ETH001"
+    }
+  ],
+  "addEmployeeData": [
+    {
+      "testCaseId": "AE001",
+      "testCaseName": "Add New Employee - Male",
+      "lastName": "Smith",
+      "firstName": "John",
+      "middleName": "David",
+      "nickName": "Johnny"
+    },
+    {
+      "testCaseId": "AE002",
+      "testCaseName": "Add New Employee - Female",
+      "lastName": "Anderson",
+      "firstName": "Emily",
+      "middleName": "Grace",
+      "nickName": "Em"
+    },
+    {
+      "testCaseId": "AE003",
+      "testCaseName": "Add New Employee - With Middle Name",
+      "lastName": "Taylor",
+      "firstName": "Christopher",
+      "middleName": "Alexander",
+      "nickName": "Chris"
+    }
+  ]
+}
