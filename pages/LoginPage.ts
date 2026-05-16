@@ -1,4 +1,5 @@
 import{Page,Locator} from '@playwright/test';
+import config from '../config/envConfig';
 
 export class LoginPage {
   private page: Page;
@@ -17,7 +18,7 @@ export class LoginPage {
 
   async gotoURL() {
    
-        await this.page.goto("https://ctcorphyd.com/SureshIT/login.php");
+        await this.page.goto(config.baseUrl);
   }
 
   async login(user: string, pass: string) {
@@ -26,10 +27,13 @@ export class LoginPage {
     await this.loginBtn.click();
   }
 
-async applicationLogin(username:string,password:string)
+async applicationLogin(username?: string, password?: string)
 {
  await this.gotoURL();
- await this.login(username,password);
+ // Use provided credentials or fall back to environment variables
+ const user = username || config.username;
+ const pass = password || config.password;
+ await this.login(user, pass);
 }
 
 
