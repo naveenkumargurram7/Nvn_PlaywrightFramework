@@ -1,4 +1,15 @@
 {
-  "cookies": [],
+  "cookies": [
+    {
+      "name": "PHPSESSID",
+      "value": "fkka89hla2tnopll9no37r0p72",
+      "domain": "ctcorphyd.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
   "origins": []
 }

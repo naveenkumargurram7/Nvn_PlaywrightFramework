@@ -2,6 +2,7 @@ import { test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomaPage';
 import { AddEmpolyee } from '../pages/AddEmployee';
+import { config } from '../config/envConfig';
 
 test.beforeAll('Storage Session', async ({ browser }) => {
 
@@ -10,7 +11,7 @@ test.beforeAll('Storage Session', async ({ browser }) => {
 
     const loginpage = new LoginPage(page);
     // Call applicationLogin without parameters to use environment variables
-    await loginpage.applicationLogin();
+    await loginpage.applicationLogin(config.username,config.password);
     await page.waitForLoadState('networkidle');
    //page.waitForTimeout(10000);
 
