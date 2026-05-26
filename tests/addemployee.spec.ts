@@ -16,8 +16,4 @@ test('Add Employee Scenario', async ({ page }) => {
     await page.waitForTimeout(4000);
 
 
-
-
-
-
 })

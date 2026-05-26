@@ -1,0 +1,140 @@
+{
+  "user": {
+    "createUser": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "9876543210",
+      "age": 30,
+      "department": "Engineering"
+    },
+    "updateUser": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "phone": "9876543211",
+      "age": 28,
+      "department": "QA"
+    },
+    "createMultipleUsers": [
+      {
+        "name": "User One",
+        "email": "user.one@example.com",
+        "phone": "1111111111",
+        "age": 25,
+        "department": "Development"
+      },
+      {
+        "name": "User Two",
+        "email": "user.two@example.com",
+        "phone": "2222222222",
+        "age": 26,
+        "department": "Testing"
+      }
+    ]
+  },
+  "post": {
+    "createPost": {
+      "title": "Test Post",
+      "body": "This is a test post for API testing",
+      "userId": 1
+    },
+    "updatePost": {
+      "title": "Updated Test Post",
+      "body": "This post has been updated",
+      "userId": 1,
+      "id": 1
+    },
+    "createComment": {
+      "postId": 1,
+      "name": "Test Comment",
+      "email": "test@example.com",
+      "body": "This is a test comment"
+    }
+  },
+  "product": {
+    "createProduct": {
+      "name": "Laptop",
+      "description": "High-performance laptop",
+      "price": 1200.99,
+      "quantity": 50,
+      "category": "Electronics"
+    },
+    "updateProduct": {
+      "name": "Gaming Laptop",
+      "description": "High-performance gaming laptop",
+      "price": 1500.99,
+      "quantity": 30,
+      "category": "Electronics"
+    },
+    "bulkCreateProducts": [
+      {
+        "name": "Monitor",
+        "description": "4K Monitor",
+        "price": 299.99,
+        "quantity": 100,
+        "category": "Electronics"
+      },
+      {
+        "name": "Keyboard",
+        "description": "Mechanical Keyboard",
+        "price": 99.99,
+        "quantity": 200,
+        "category": "Accessories"
+      }
+    ]
+  },
+  "order": {
+    "createOrder": {
+      "customerId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "price": 50.00
+        },
+        {
+          "productId": 2,
+          "quantity": 1,
+          "price": 100.00
+        }
+      ],
+      "total": 200.00,
+      "status": "pending",
+      "shippingAddress": "123 Main St, City, Country"
+    },
+    "updateOrderStatus": {
+      "status": "shipped",
+      "trackingNumber": "TRACK123456"
+    }
+  },
+  "authentication": {
+    "login": {
+      "username": "testuser",
+      "password": "testpassword123"
+    },
+    "register": {
+      "username": "newuser",
+      "email": "newuser@example.com",
+      "password": "securepassword123",
+      "firstName": "New",
+      "lastName": "User"
+    },
+    "refreshToken": {
+      "refreshToken": "your_refresh_token_here"
+    }
+  },
+  "invalidData": {
+    "missingRequired": {
+      "name": "John Doe"
+    },
+    "invalidEmail": {
+      "name": "John Doe",
+      "email": "invalid-email",
+      "age": 30
+    },
+    "invalidType": {
+      "name": "John Doe",
+      "age": "thirty",
+      "email": "john@example.com"
+    }
+  }
+}

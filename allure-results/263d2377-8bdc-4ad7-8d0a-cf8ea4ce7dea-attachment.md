@@ -1,0 +1,1061 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: yatra_listitems.spec.ts >> yasta website and handling list items
+- Location: tests\yatra_listitems.spec.ts:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('.MuiBox-root').getByRole('listitem').filter({ hasText: 'New Bern' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - link "Yatra Logo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Yatra Logo" [ref=e9]
+        - generic [ref=e10]:
+          - button "Join Yatra Prime Banner" [ref=e11] [cursor=pointer]:
+            - img "Join Yatra Prime Banner" [ref=e12]
+          - button "yatraBusiness Corporates arrowDown" [ref=e14] [cursor=pointer]:
+            - generic [ref=e15]:
+              - img "yatraBusiness" [ref=e16]
+              - generic [ref=e17]: Corporates
+              - img "arrowDown" [ref=e18]
+          - generic [ref=e19] [cursor=pointer]: Login / Signup
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - tablist "Tab navigation" [ref=e25]:
+            - tab "selected Flights, 1 of 6" [selected] [ref=e26] [cursor=pointer]:
+              - generic [ref=e27]:
+                - generic [ref=e28]: 
+                - text: Flights
+              - generic [ref=e29]: Upto 15% Off
+            - tab "Hotels, 2 of 6" [ref=e30] [cursor=pointer]:
+              - generic [ref=e31]:
+                - generic [ref=e32]: 
+                - text: Hotels
+              - generic [ref=e33]: Upto 50% Off
+            - tab "Holidays, 3 of 6" [ref=e34] [cursor=pointer]:
+              - generic [ref=e35]:
+                - generic [ref=e36]: 
+                - text: Holidays
+            - tab "Bus, 4 of 6" [ref=e37] [cursor=pointer]:
+              - generic [ref=e38]:
+                - generic [ref=e39]: 
+                - text: Bus
+            - tab "Trains, 5 of 6" [ref=e40] [cursor=pointer]:
+              - generic [ref=e41]:
+                - generic [ref=e42]: 
+                - text: Trains
+            - tab "Cabs, 6 of 6" [ref=e43] [cursor=pointer]:
+              - generic [ref=e44]:
+                - generic [ref=e45]: 
+                - text: Cabs
+          - button "Diya AI" [ref=e48] [cursor=pointer]:
+            - img "Diya AI" [ref=e49]
+        - generic [ref=e51]:
+          - radiogroup [ref=e53]:
+            - radio "One Way" [checked] [ref=e54] [cursor=pointer]:
+              - generic [ref=e55]:
+                - radio "One Way" [checked] [ref=e56]
+                - generic [ref=e57]:
+                  - img [ref=e58]
+                  - img [ref=e60]
+              - heading "One Way" [level=4] [ref=e63]
+            - radio "Round Trip" [ref=e64] [cursor=pointer]:
+              - generic [ref=e65]:
+                - radio "Round Trip" [ref=e66]
+                - img [ref=e68]
+              - heading "Round Trip" [level=4] [ref=e71]
+            - radio "Multi City" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]:
+                - radio "Multi City" [ref=e74]
+                - img [ref=e76]
+              - heading "Multi City" [level=4] [ref=e79]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - generic [ref=e83]:
+                  - generic "Departure From New Delhi inputbox" [ref=e84]:
+                    - paragraph [ref=e85]: Departure From
+                    - paragraph [ref=e86]: new delhi
+                    - paragraph [ref=e87]: DEL, Indira Gandhi International
+                  - generic:
+                    - button "Departure From" [ref=e88]:
+                      - generic [ref=e89]: Departure From
+                      - textbox "Departure From" [ref=e91]
+                    - generic [ref=e93]:
+                      - list [ref=e96]:
+                        - listitem [ref=e98] [cursor=pointer]:
+                          - generic [ref=e100]:
+                            - generic [ref=e101]:
+                              - generic [ref=e102]: New Delhi
+                              - generic [ref=e103]: Indira Gandhi International
+                            - generic [ref=e104]: DEL
+                        - listitem [ref=e106] [cursor=pointer]:
+                          - generic [ref=e108]:
+                            - generic [ref=e109]:
+                              - generic [ref=e110]: Mumbai
+                              - generic [ref=e111]: Chhatrapati Shivaji International
+                            - generic [ref=e112]: BOM
+                        - listitem [ref=e114] [cursor=pointer]:
+                          - generic [ref=e116]:
+                            - generic [ref=e117]:
+                              - generic [ref=e118]: Bangalore
+                              - generic [ref=e119]: Kempegowda International
+                            - generic [ref=e120]: BLR
+                        - listitem [ref=e122] [cursor=pointer]:
+                          - generic [ref=e124]:
+                            - generic [ref=e125]:
+                              - generic [ref=e126]: Chennai
+                              - generic [ref=e127]: Chennai International
+                            - generic [ref=e128]: MAA
+                        - listitem [ref=e130] [cursor=pointer]:
+                          - generic [ref=e132]:
+                            - generic [ref=e133]:
+                              - generic [ref=e134]: Hyderabad
+                              - generic [ref=e135]: Shamshabad Rajiv Gandhi
+                            - generic [ref=e136]: HYD
+                        - listitem [ref=e138] [cursor=pointer]:
+                          - generic [ref=e140]:
+                            - generic [ref=e141]:
+                              - generic [ref=e142]: Goa
+                              - generic [ref=e143]: Dabolim
+                            - generic [ref=e144]: GOI
+                        - listitem [ref=e146] [cursor=pointer]:
+                          - generic [ref=e148]:
+                            - generic [ref=e149]:
+                              - generic [ref=e150]: Kolkata
+                              - generic [ref=e151]: Netaji Subhas Chandra Bose
+                            - generic [ref=e152]: CCU
+                        - listitem [ref=e154] [cursor=pointer]:
+                          - generic [ref=e156]:
+                            - generic [ref=e157]:
+                              - generic [ref=e158]: Pune
+                              - generic [ref=e159]: Lohegaon
+                            - generic [ref=e160]: PNQ
+                        - listitem [ref=e162] [cursor=pointer]:
+                          - generic [ref=e164]:
+                            - generic [ref=e165]:
+                              - generic [ref=e166]: Jaipur
+                              - generic [ref=e167]: Sanganeer
+                            - generic [ref=e168]: JAI
+                        - listitem [ref=e170] [cursor=pointer]:
+                          - generic [ref=e172]:
+                            - generic [ref=e173]:
+                              - generic [ref=e174]: Lucknow
+                              - generic [ref=e175]: Amausi
+                            - generic [ref=e176]: LKO
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: Recent Searches
+                        - generic [ref=e179]:
+                          - generic [ref=e180] [cursor=pointer]:
+                            - paragraph [ref=e181]: Thursday 17 Oct 24, 1 Passenger
+                            - paragraph [ref=e182]:
+                              - generic [ref=e183]: 
+                              - text: New Delhi (DEL) - Jaipur (JAI)
+                          - generic [ref=e184] [cursor=pointer]:
+                            - paragraph [ref=e185]: Wednesday 02 Oct 24, 1 Passenger
+                            - paragraph [ref=e186]:
+                              - generic [ref=e187]: 
+                              - text: New Delhi (DEL) - Dubai (DXB)
+                - button "Swap" [ref=e190] [cursor=pointer]:
+                  - img "Switch" [ref=e191]
+                - generic "Going To Mumbai inputbox" [ref=e193]:
+                  - paragraph [ref=e194]: Going To
+                  - paragraph [ref=e195]: mumbai
+                  - paragraph [ref=e196]: BOM, Chhatrapati Shivaji International
+              - generic [ref=e198]:
+                - button "Departure Date inputbox" [ref=e199] [cursor=pointer]:
+                  - generic [ref=e200]:
+                    - generic [ref=e201]: Departure Date
+                    - generic [ref=e202]: 
+                  - generic [ref=e203]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: 18May'
+                            - generic: "26"
+                        - generic: Monday
+                - button "Return Date inputbox" [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205]:
+                    - generic [ref=e206]: Return Date
+                    - generic [ref=e207]: 
+                  - generic [ref=e209]:
+                    - text: Book Round Trip
+                    - text: to save extra
+              - combobox "Travellers class inputbox" [ref=e211] [cursor=pointer]:
+                - generic [ref=e212]:
+                  - generic [ref=e213]: Travellers & Class
+                  - generic [ref=e214]: 
+                - generic [ref=e215]:
+                  - generic:
+                    - textbox "Select Traveler": 1 Traveller
+                  - generic [ref=e216]: Economy
+              - button "Search" [ref=e219] [cursor=pointer]: Search
+            - generic [ref=e220]:
+              - radio "selected Regular Regular Fares, 1 of 4" [checked] [ref=e221]:
+                - button "Regular Regular Fares" [ref=e222] [cursor=pointer]:
+                  - generic [ref=e224]:
+                    - generic [ref=e225]:
+                      - radio [checked] [ref=e226]
+                      - generic [ref=e227]:
+                        - img [ref=e228]
+                        - img [ref=e230]
+                    - generic [ref=e232]:
+                      - generic [ref=e233]: Regular
+                      - generic [ref=e234]: Regular Fares
+              - radio "Student Extra Baggage, 2 of 4" [ref=e235]:
+                - button "Student Extra Baggage" [ref=e236] [cursor=pointer]:
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - radio [ref=e240]
+                      - img [ref=e242]
+                    - generic [ref=e244]:
+                      - generic [ref=e245]: Student
+                      - generic [ref=e246]: Extra Baggage
+              - radio "Armed Forces Extra Discount, 3 of 4" [ref=e247]:
+                - button "Armed Forces Extra Discount" [ref=e248] [cursor=pointer]:
+                  - generic [ref=e250]:
+                    - generic [ref=e251]:
+                      - radio [ref=e252]
+                      - img [ref=e254]
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: Armed Forces
+                      - generic [ref=e258]: Extra Discount
+              - radio "Senior Citizen Extra Discount, 4 of 4" [ref=e259]:
+                - button "Senior Citizen Extra Discount" [ref=e260] [cursor=pointer]:
+                  - generic [ref=e262]:
+                    - generic [ref=e263]:
+                      - radio [ref=e264]
+                      - img [ref=e266]
+                    - generic [ref=e268]:
+                      - generic [ref=e269]: Senior Citizen
+                      - generic [ref=e270]: Extra Discount
+              - generic [ref=e271] [cursor=pointer]:
+                - generic [ref=e272]:
+                  - checkbox "Non-Stop Flights" [ref=e273]
+                  - img [ref=e274]
+                - generic [ref=e276]: Non-Stop Flights
+          - button "Claim your Covid Refund" [ref=e277] [cursor=pointer]:
+            - img "Covid Refund" [ref=e278]
+            - generic [ref=e279]: Claim your Covid Refund
+    - generic [ref=e280]:
+      - generic [ref=e281]:
+        - 'button "Air India: Important Flight Information Arrow" [ref=e282] [cursor=pointer]':
+          - generic [ref=e283]: "Air India: Important Flight Information"
+          - img "Arrow" [ref=e284]
+        - button "Claim Refund for Cancelled Flights Arrow" [ref=e285] [cursor=pointer]:
+          - generic [ref=e286]: Claim Refund for Cancelled Flights
+          - img "Arrow" [ref=e287]
+      - generic "Special Offers section" [ref=e289]:
+        - heading "Special Offers" [level=5] [ref=e291]
+        - text: 
+        - tablist [ref=e292]:
+          - tab "Selected All, 1 of 6" [ref=e293] [cursor=pointer]:
+            - generic [ref=e294]: All
+          - tab "Flights, 2 of 6" [ref=e295] [cursor=pointer]:
+            - generic [ref=e296]: Flights
+          - tab "Hotels, 3 of 6" [ref=e297] [cursor=pointer]:
+            - generic [ref=e298]: Hotels
+          - tab "Holidays, 4 of 6" [ref=e299] [cursor=pointer]:
+            - generic [ref=e300]: Holidays
+          - tab "Buses, 5 of 6" [ref=e301] [cursor=pointer]:
+            - generic [ref=e302]: Buses
+          - tab "Rajasthan Attractions, 7 of 6" [ref=e303] [cursor=pointer]:
+            - generic [ref=e304]: Rajasthan Attractions
+        - generic [ref=e305]:
+          - generic [ref=e306]:
+            - generic [ref=e308]:
+              - generic "Flat 25% OFF up to INR 10,000" [ref=e309]:
+                - generic [ref=e311] [cursor=pointer]:
+                  - img "image" [ref=e312]
+                  - generic [ref=e313]:
+                    - generic [ref=e314]: Flat 25% OFF up to INR 10,000
+                    - generic [ref=e315]: On Domestic Flights
+                    - generic [ref=e316]:
+                      - generic [ref=e317]: "*Offer Valid on American Express Centurion & Platinum Cards only."
+                      - generic [ref=e318]: YRAMEXTRAVEL
+                    - link "View Details" [ref=e320]:
+                      - text: View Details
+                      - img "arrow_right" [ref=e321]
+              - generic "Up to INR 2,026 OFF" [ref=e322]:
+                - generic [ref=e324] [cursor=pointer]:
+                  - img "image" [ref=e325]
+                  - generic [ref=e326]:
+                    - generic [ref=e327]: Up to INR 2,026 OFF
+                    - generic [ref=e328]: On Domestic Flights
+                    - generic [ref=e329]:
+                      - generic [ref=e330]: "*Offer Valid on American Express Network Card Transactions Only."
+                      - generic [ref=e331]: AMEXNET
+                    - link "View Details" [ref=e333]:
+                      - text: View Details
+                      - img "arrow_right" [ref=e334]
+              - generic "Up to INR 2,400 OFF*" [ref=e335]:
+                - generic [ref=e337] [cursor=pointer]:
+                  - img "image" [ref=e338]
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: Up to INR 2,400 OFF*
+                    - generic [ref=e341]: On Domestic Flights
+                    - generic [ref=e342]:
+                      - generic [ref=e343]: "*Offer Valid on American Express Credit Card EMI Transactions Onl..."
+                      - generic [ref=e344]: YRAMEXTRAVELEMI
+                    - link "View Details" [ref=e346]:
+                      - text: View Details
+                      - img "arrow_right" [ref=e347]
+              - generic "Up to INR 1,800 OFF" [ref=e348]:
+                - generic [ref=e350] [cursor=pointer]:
+                  - img "image" [ref=e351]
+                  - generic [ref=e352]:
+                    - generic [ref=e353]: Up to INR 1,800 OFF
+                    - generic [ref=e354]: On Domestic Flights
+                    - generic [ref=e355]:
+                      - generic [ref=e356]: "*Offer Valid on BOBCARD transactions only."
+                      - generic [ref=e357]: YTBOBFEST
+                    - link "View Details" [ref=e359]:
+                      - text: View Details
+                      - img "arrow_right" [ref=e360]
+              - generic "Up to Rs. 3,000 OFF+ Interest Free EMI" [ref=e361]:
+                - generic [ref=e363] [cursor=pointer]:
+                  - img "image" [ref=e364]
+                  - generic [ref=e365]:
+                    - generic [ref=e366]: Up to Rs. 3,000 OFF+ Interest Free EMI
+                    - generic [ref=e367]: On Domestic Flights
+                    - generic [ref=e368]:
+                      - generic [ref=e369]: Offer valid on Axis Bank Credit Card EMI Transactions Only
+                      - generic [ref=e370]: YRAXISEMI
+                    - link "View Details" [ref=e372]:
+                      - text: View Details
+                      - img "arrow_right" [ref=e373]
+              - generic "Up to INR 2,026 OFF*" [ref=e374]:
+                - generic [ref=e376] [cursor=pointer]:
+                  - img "image" [ref=e377]
+                  - generic [ref=e378]:
+                    - generic [ref=e379]: Up to INR 2,026 OFF*
+                    - generic [ref=e380]: On Domestic Flights
+                    - generic [ref=e381]:
+                      - generic [ref=e382]: "*Offer Valid on SBI VISA Debit Platinum, Business Platinum or Sig..."
+                      - generic [ref=e383]: YRSBIVISADC
+                    - link "View Details" [ref=e385]:
+                      - text: View Details
+                      - img "arrow_right" [ref=e386]
+            - button "next" [ref=e387] [cursor=pointer]:
+              - generic [ref=e388]: 󡁖
+          - button "View all offers icon" [ref=e390] [cursor=pointer]:
+            - text: View all offers
+            - img "icon" [ref=e391]
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - generic [ref=e394]:
+            - generic "return dropdown button" [ref=e397]:
+              - combobox "Return" [ref=e398] [cursor=pointer]
+              - textbox: R
+              - img
+              - img "icon" [ref=e399] [cursor=pointer]
+              - group
+            - heading "Flights to Popular Domestic Destinations from" [level=2] [ref=e400]
+            - generic "return dropdown button" [ref=e403]:
+              - combobox "Delhi" [ref=e404] [cursor=pointer]
+              - textbox: DEL
+              - img
+              - img "icon" [ref=e405] [cursor=pointer]
+              - group
+          - generic [ref=e406]:
+            - generic [ref=e408]:
+              - link "Mumbai Mumbai Starting from ₹9,598" [ref=e410] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=BOM&destinationCon=IN&tripType=R
+                - generic [ref=e411]:
+                  - generic "Mumbai" [ref=e413]
+                  - img "Mumbai" [ref=e414]
+                  - generic [ref=e416]:
+                    - paragraph [ref=e417]: Starting from
+                    - paragraph [ref=e418]: ₹9,598
+              - link "Bangalore Bangalore Starting from ₹12,919" [ref=e420] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=BLR&destinationCon=IN&tripType=R
+                - generic [ref=e421]:
+                  - generic "Bangalore" [ref=e423]
+                  - img "Bangalore" [ref=e424]
+                  - generic [ref=e426]:
+                    - paragraph [ref=e427]: Starting from
+                    - paragraph [ref=e428]: ₹12,919
+              - link "Pune Pune Starting from ₹11,105" [ref=e430] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=PNQ&destinationCon=IN&tripType=R
+                - generic [ref=e431]:
+                  - generic "Pune" [ref=e433]
+                  - img "Pune" [ref=e434]
+                  - generic [ref=e436]:
+                    - paragraph [ref=e437]: Starting from
+                    - paragraph [ref=e438]: ₹11,105
+              - link "Kolkata Kolkata Starting from ₹8,998" [ref=e440] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=CCU&destinationCon=IN&tripType=R
+                - generic [ref=e441]:
+                  - generic "Kolkata" [ref=e443]
+                  - img "Kolkata" [ref=e444]
+                  - generic [ref=e446]:
+                    - paragraph [ref=e447]: Starting from
+                    - paragraph [ref=e448]: ₹8,998
+              - link "Hyderabad Hyderabad Starting from ₹9,439" [ref=e450] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=HYD&destinationCon=IN&tripType=R
+                - generic [ref=e451]:
+                  - generic "Hyderabad" [ref=e453]
+                  - img "Hyderabad" [ref=e454]
+                  - generic [ref=e456]:
+                    - paragraph [ref=e457]: Starting from
+                    - paragraph [ref=e458]: ₹9,439
+              - link "Goa Goa Starting from ₹9,999" [ref=e460] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=GOI&destinationCon=IN&tripType=R
+                - generic [ref=e461]:
+                  - generic "Goa" [ref=e463]
+                  - img "Goa" [ref=e464]
+                  - generic [ref=e466]:
+                    - paragraph [ref=e467]: Starting from
+                    - paragraph [ref=e468]: ₹9,999
+              - link "Chennai Chennai Starting from ₹12,112" [ref=e470] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=MAA&destinationCon=IN&tripType=R
+                - generic [ref=e471]:
+                  - generic "Chennai" [ref=e473]
+                  - img "Chennai" [ref=e474]
+                  - generic [ref=e476]:
+                    - paragraph [ref=e477]: Starting from
+                    - paragraph [ref=e478]: ₹12,112
+              - link "Ahmedabad Ahmedabad Starting from ₹8,242" [ref=e480] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=AMD&destinationCon=IN&tripType=R
+                - generic [ref=e481]:
+                  - generic "Ahmedabad" [ref=e483]
+                  - img "Ahmedabad" [ref=e484]
+                  - generic [ref=e486]:
+                    - paragraph [ref=e487]: Starting from
+                    - paragraph [ref=e488]: ₹8,242
+              - link "Lucknow Lucknow Starting from ₹7,004" [ref=e490] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=LKO&destinationCon=IN&tripType=R
+                - generic [ref=e491]:
+                  - generic "Lucknow" [ref=e493]
+                  - img "Lucknow" [ref=e494]
+                  - generic [ref=e496]:
+                    - paragraph [ref=e497]: Starting from
+                    - paragraph [ref=e498]: ₹7,004
+              - link "Jaipur Jaipur Starting from ₹5,389" [ref=e500] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=JAI&destinationCon=IN&tripType=R
+                - generic [ref=e501]:
+                  - generic "Jaipur" [ref=e503]
+                  - img "Jaipur" [ref=e504]
+                  - generic [ref=e506]:
+                    - paragraph [ref=e507]: Starting from
+                    - paragraph [ref=e508]: ₹5,389
+              - link "Cochin Cochin Starting from ₹16,436" [ref=e510] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=COK&destinationCon=IN&tripType=R
+                - generic [ref=e511]:
+                  - generic "Cochin" [ref=e513]
+                  - img "Cochin" [ref=e514]
+                  - generic [ref=e516]:
+                    - paragraph [ref=e517]: Starting from
+                    - paragraph [ref=e518]: ₹16,436
+              - link "Amritsar Amritsar Starting from ₹6,367" [ref=e520] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=ATQ&destinationCon=IN&tripType=R
+                - generic [ref=e521]:
+                  - generic "Amritsar" [ref=e523]
+                  - img "Amritsar" [ref=e524]
+                  - generic [ref=e526]:
+                    - paragraph [ref=e527]: Starting from
+                    - paragraph [ref=e528]: ₹6,367
+              - link "Nagpur Nagpur Starting from ₹11,008" [ref=e530] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=NAG&destinationCon=IN&tripType=R
+                - generic [ref=e531]:
+                  - generic "Nagpur" [ref=e533]
+                  - img "Nagpur" [ref=e534]
+                  - generic [ref=e536]:
+                    - paragraph [ref=e537]: Starting from
+                    - paragraph [ref=e538]: ₹11,008
+              - link "Trivandrum Trivandrum Starting from ₹13,416" [ref=e540] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=TRV&destinationCon=IN&tripType=R
+                - generic [ref=e541]:
+                  - generic "Trivandrum" [ref=e543]
+                  - img "Trivandrum" [ref=e544]
+                  - generic [ref=e546]:
+                    - paragraph [ref=e547]: Starting from
+                    - paragraph [ref=e548]: ₹13,416
+              - link "Chandigarh Chandigarh Starting from ₹4,410" [ref=e550] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/monthlychart?origin=DEL&originCon=IN&destination=IXC&destinationCon=IN&tripType=R
+                - generic [ref=e551]:
+                  - generic "Chandigarh" [ref=e553]
+                  - img "Chandigarh" [ref=e554]
+                  - generic [ref=e556]:
+                    - paragraph [ref=e557]: Starting from
+                    - paragraph [ref=e558]: ₹4,410
+            - button "next" [ref=e559] [cursor=pointer]:
+              - generic [ref=e560]: 󡁖
+          - link "See all the locations" [ref=e561]:
+            - heading "See all the locations All" [level=1] [ref=e562] [cursor=pointer]:
+              - text: See all the locations
+              - img "All" [ref=e563]
+        - generic [ref=e564]:
+          - generic [ref=e565]:
+            - generic "return dropdown button" [ref=e568]:
+              - combobox "Return" [ref=e569] [cursor=pointer]
+              - textbox: R
+              - img
+              - img "icon" [ref=e570] [cursor=pointer]
+              - group
+            - heading "Flights to Popular International Destinations from" [level=2] [ref=e571]
+            - generic "return dropdown button" [ref=e574]:
+              - combobox "Delhi" [ref=e575] [cursor=pointer]
+              - textbox: DEL
+              - img
+              - img "icon" [ref=e576] [cursor=pointer]
+              - group
+          - generic [ref=e577]:
+            - generic [ref=e579]:
+              - link "Asia Asia Starting from ₹13,603" [ref=e581] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Asia&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e582]:
+                  - generic "Asia" [ref=e584]
+                  - img "Asia" [ref=e585]
+                  - generic [ref=e587]:
+                    - paragraph [ref=e588]: Starting from
+                    - paragraph [ref=e589]: ₹13,603
+              - link "Top Destination... Top Destinations Starting from ₹15,513" [ref=e591] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Top%20Destinations&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e592]:
+                  - generic "Top Destinations" [ref=e594]: Top Destination...
+                  - img "Top Destinations" [ref=e595]
+                  - generic [ref=e597]:
+                    - paragraph [ref=e598]: Starting from
+                    - paragraph [ref=e599]: ₹15,513
+              - link "Middle East Middle East Starting from ₹21,836" [ref=e601] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Middle%20East&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e602]:
+                  - generic "Middle East" [ref=e604]
+                  - img "Middle East" [ref=e605]
+                  - generic [ref=e607]:
+                    - paragraph [ref=e608]: Starting from
+                    - paragraph [ref=e609]: ₹21,836
+              - link "Europe Europe Starting from ₹24,112" [ref=e611] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Europe&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e612]:
+                  - generic "Europe" [ref=e614]
+                  - img "Europe" [ref=e615]
+                  - generic [ref=e617]:
+                    - paragraph [ref=e618]: Starting from
+                    - paragraph [ref=e619]: ₹24,112
+              - link "Africa Africa Starting from ₹34,230" [ref=e621] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Africa&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e622]:
+                  - generic "Africa" [ref=e624]
+                  - img "Africa" [ref=e625]
+                  - generic [ref=e627]:
+                    - paragraph [ref=e628]: Starting from
+                    - paragraph [ref=e629]: ₹34,230
+              - link "Australia & New... Australia & New Zealand Starting from ₹56,163" [ref=e631] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Australia%20&%20New%20Zealand&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e632]:
+                  - generic "Australia & New Zealand" [ref=e634]: Australia & New...
+                  - img "Australia & New Zealand" [ref=e635]
+                  - generic [ref=e637]:
+                    - paragraph [ref=e638]: Starting from
+                    - paragraph [ref=e639]: ₹56,163
+              - link "North America North America Starting from ₹67,076" [ref=e641] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=North%20America&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e642]:
+                  - generic "North America" [ref=e644]
+                  - img "North America" [ref=e645]
+                  - generic [ref=e647]:
+                    - paragraph [ref=e648]: Starting from
+                    - paragraph [ref=e649]: ₹67,076
+              - link "Latin America &... Latin America & Caribbean Starting from ₹96,910" [ref=e651] [cursor=pointer]:
+                - /url: https://www.yatra.com/etw-desktop/city-list?regionName=Latin%20America%20&%20Caribbean&origin=DEL&originCon=IN&tripType=R
+                - generic [ref=e652]:
+                  - generic "Latin America & Caribbean" [ref=e654]: Latin America &...
+                  - img "Latin America & Caribbean" [ref=e655]
+                  - generic [ref=e657]:
+                    - paragraph [ref=e658]: Starting from
+                    - paragraph [ref=e659]: ₹96,910
+            - button "next" [ref=e660] [cursor=pointer]:
+              - generic [ref=e661]: 󡁖
+          - link "See all the locations" [ref=e662]:
+            - heading "See all the locations All" [level=1] [ref=e663] [cursor=pointer]:
+              - text: See all the locations
+              - img "All" [ref=e664]
+    - generic [ref=e665]:
+      - generic [ref=e666]:
+        - img "Yatra Mobile App" [ref=e669]
+        - generic [ref=e670]:
+          - heading "TRY ON MOBILE" [level=2] [ref=e671]
+          - paragraph [ref=e672]: Download our app for unbeatable perks!
+          - generic [ref=e673]:
+            - img "Download Yatra Mobile App QR code" [ref=e674]
+            - generic [ref=e675]:
+              - link "Download Yatra Play store app" [ref=e676] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.yatra.base
+                - img "Download Yatra Play store app" [ref=e677]
+              - link "Download Yatra App store" [ref=e678] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/yatra-flights-hotels-cabs/id730234679
+                - img "Download Yatra App store" [ref=e679]
+      - generic "Yatra’s Other Services container" [ref=e682]:
+        - heading "Yatra’s Other Services" [level=2] [ref=e684]
+        - generic [ref=e685]:
+          - button "Adventure" [ref=e686]:
+            - link "Adventure Adventure Plan my Trip " [ref=e687] [cursor=pointer]:
+              - /url: https://www.adventurenation.com/?utm_source=yatra.com&utm_medium=referral&utm_campaign=yatra-desktop
+              - img "Adventure" [ref=e688]
+              - generic [ref=e689]:
+                - generic [ref=e690]: Adventure
+                - generic [ref=e691]:
+                  - text: Plan my Trip
+                  - generic [ref=e692]: 
+          - button "MICE" [ref=e694]:
+            - link "MICE MICE Plan my Trip " [ref=e695] [cursor=pointer]:
+              - /url: https://www.yatra.com/mice
+              - img "MICE" [ref=e696]
+              - generic [ref=e697]:
+                - generic [ref=e698]: MICE
+                - generic [ref=e699]:
+                  - text: Plan my Trip
+                  - generic [ref=e700]: 
+          - button "Cruise" [ref=e702]:
+            - link "Cruise Cruise Book a cruise holiday and discover a new way of arriving at your destination. Plan my Trip " [ref=e703] [cursor=pointer]:
+              - /url: https://www.yatra.com/cruise
+              - img "Cruise" [ref=e704]
+              - generic [ref=e705]:
+                - generic [ref=e706]: Cruise
+                - generic: Book a cruise holiday and discover a new way of arriving at your destination.
+                - generic [ref=e707]:
+                  - text: Plan my Trip
+                  - generic [ref=e708]: 
+          - button "Villas & Stays" [ref=e710]:
+            - link "Villas & Stays Villas & Stays Plan my Trip " [ref=e711] [cursor=pointer]:
+              - /url: https://www.yatra.com/homestays
+              - img "Villas & Stays" [ref=e712]
+              - generic [ref=e713]:
+                - generic [ref=e714]: Villas & Stays
+                - generic [ref=e715]:
+                  - text: Plan my Trip
+                  - generic [ref=e716]: 
+          - button "Luxury Trains" [ref=e718]:
+            - link "Luxury Trains Luxury Trains Plan my Trip " [ref=e719] [cursor=pointer]:
+              - /url: https://www.yatra.com/luxury-trains
+              - img "Luxury Trains" [ref=e720]
+              - generic [ref=e721]:
+                - generic [ref=e722]: Luxury Trains
+                - generic [ref=e723]:
+                  - text: Plan my Trip
+                  - generic [ref=e724]: 
+          - button "Monuments" [ref=e726]:
+            - link "Monuments Monuments Plan my Trip " [ref=e727] [cursor=pointer]:
+              - /url: https://www.yatra.com/monuments
+              - img "Monuments" [ref=e728]
+              - generic [ref=e729]:
+                - generic [ref=e730]: Monuments
+                - generic [ref=e731]:
+                  - text: Plan my Trip
+                  - generic [ref=e732]: 
+          - button "Activites" [ref=e734]:
+            - link "Activites Activites Yatra Activities cover shopping experiences, heritage walks, adventure activities, fun activities, sightseeing experiences, and much more. Plan my Trip " [ref=e735] [cursor=pointer]:
+              - /url: https://www.yatra.com/holidays
+              - img "Activites" [ref=e736]
+              - generic [ref=e737]:
+                - generic [ref=e738]: Activites
+                - generic: Yatra Activities cover shopping experiences, heritage walks, adventure activities, fun activities, sightseeing experiences, and much more.
+                - generic [ref=e739]:
+                  - text: Plan my Trip
+                  - generic [ref=e740]: 
+          - button "Gift Voucher" [ref=e742]:
+            - link "Gift Voucher Gift Voucher Plan my Trip " [ref=e743] [cursor=pointer]:
+              - /url: https://www.yatra.com/online/gift-voucher
+              - img "Gift Voucher" [ref=e744]
+              - generic [ref=e745]:
+                - generic [ref=e746]: Gift Voucher
+                - generic [ref=e747]:
+                  - text: Plan my Trip
+                  - generic [ref=e748]: 
+          - button "Freight" [ref=e750]:
+            - link "Freight Freight Plan my Trip " [ref=e751] [cursor=pointer]:
+              - /url: https://www.yatrafreight.com
+              - img "Freight" [ref=e752]
+              - generic [ref=e753]:
+                - generic [ref=e754]: Freight
+                - generic [ref=e755]:
+                  - text: Plan my Trip
+                  - generic [ref=e756]: 
+          - button "Visa" [ref=e758]:
+            - link "Visa Visa Plan my Trip " [ref=e759] [cursor=pointer]:
+              - /url: https://www.yatra.com/visa
+              - img "Visa" [ref=e760]
+              - generic [ref=e761]:
+                - generic [ref=e762]: Visa
+                - generic [ref=e763]:
+                  - text: Plan my Trip
+                  - generic [ref=e764]: 
+      - generic [ref=e768]:
+        - generic [ref=e769]:
+          - heading "Why Yatra?" [level=2] [ref=e770]
+          - generic [ref=e771]:
+            - button "Search Flights and Hotels with Exclusive Deals-1 Search Flights and Hotels with Exclusive Deals " [expanded] [ref=e772] [cursor=pointer]:
+              - generic [ref=e774]:
+                - img "Search Flights and Hotels with Exclusive Deals-1"
+                - generic [ref=e775]: Search Flights and Hotels with Exclusive Deals
+              - generic [ref=e777]: 
+            - region "Search Flights and Hotels with Exclusive Deals-1 Search Flights and Hotels with Exclusive Deals " [ref=e781]:
+              - generic [ref=e782]: Search for exclusive deals on flights and hotels. Find cheap air tickets to any destination you like. Choose from its vast repository of hotels - from budget, mid-range, five-star to niche boutique properties. Widen your choices with options like flexi stay, pay directly at hotel, and guaranteed standard amenities. Extremely efficient and easy.
+          - button "Enjoy Secure Flight Bookings with Protection-2 Enjoy Secure Flight Bookings with Protection " [ref=e784] [cursor=pointer]:
+            - generic [ref=e786]:
+              - img "Enjoy Secure Flight Bookings with Protection-2"
+              - generic [ref=e787]: Enjoy Secure Flight Bookings with Protection
+            - generic [ref=e789]: 
+          - button "Holiday Options for Every Budget and Interest-3 Holiday Options for Every Budget and Interest " [ref=e791] [cursor=pointer]:
+            - generic [ref=e793]:
+              - img "Holiday Options for Every Budget and Interest-3"
+              - generic [ref=e794]: Holiday Options for Every Budget and Interest
+            - generic [ref=e796]: 
+          - button "Customize Your Trip with Best Combinations-4 Customize Your Trip with Best Combinations " [ref=e798] [cursor=pointer]:
+            - generic [ref=e800]:
+              - img "Customize Your Trip with Best Combinations-4"
+              - generic [ref=e801]: Customize Your Trip with Best Combinations
+            - generic [ref=e803]: 
+          - button "Skip the Ticket Queue for Monument Visits-5 Skip the Ticket Queue for Monument Visits " [ref=e805] [cursor=pointer]:
+            - generic [ref=e807]:
+              - img "Skip the Ticket Queue for Monument Visits-5"
+              - generic [ref=e808]: Skip the Ticket Queue for Monument Visits
+            - generic [ref=e810]: 
+          - button "Get New Deals Every Season for Flights and Hotels-6 Get New Deals Every Season for Flights and Hotels " [ref=e812] [cursor=pointer]:
+            - generic [ref=e814]:
+              - img "Get New Deals Every Season for Flights and Hotels-6"
+              - generic [ref=e815]: Get New Deals Every Season for Flights and Hotels
+            - generic [ref=e817]: 
+          - button "Customer Support Backed by Millions of Satisfied Travelers-7 Customer Support Backed by Millions of Satisfied Travelers " [ref=e819] [cursor=pointer]:
+            - generic [ref=e821]:
+              - img "Customer Support Backed by Millions of Satisfied Travelers-7"
+              - generic [ref=e822]: Customer Support Backed by Millions of Satisfied Travelers
+            - generic [ref=e824]: 
+        - img "whyYatraMobile" [ref=e827]
+    - generic [ref=e828]:
+      - generic [ref=e829]:
+        - heading "Popular Flight Routes" [level=2] [ref=e830]
+        - list [ref=e831]:
+          - link "delhi to mumbai" [ref=e832] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-mumbai-flights.html
+            - text: Delhi to Mumbai Flight
+          - link "delhi to chennai" [ref=e833] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-chennai-flights.html
+            - text: Delhi to Chennai Flight
+          - link "delhi to goa" [ref=e834] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-goa-flights.html
+            - text: Delhi to Goa Flight
+          - link "delhi to bangalore" [ref=e835] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-bangalore-flights.html
+            - text: Delhi to Bangalore Flight
+          - link "delhi to kolkata" [ref=e836] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-kolkata-flights.html
+            - text: Delhi to Kolkata Flight
+          - link "mumbai to chennai" [ref=e837] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/mumbai-to-chennai-flights.html
+            - text: Mumbai to Chennai Flight
+          - link "delhi to hyderabad" [ref=e838] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-hyderabad-flights.html
+            - text: Delhi to Hyderabad Flight
+          - link "bangalore to hyderabad" [ref=e839] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/bangalore-to-hyderabad-flights.html
+            - text: Bangalore to Hyderabad Flight
+          - link "mumbai to kolkata" [ref=e840] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/mumbai-to-kolkata-flights.html
+            - text: Mumbai to Kolkata Flight
+          - link "delhi to pune" [ref=e841] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-pune-flights.html
+            - text: Delhi to Pune Flight
+          - link "bangalore to goa" [ref=e842] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/bangalore-to-goa-flights.html
+            - text: Bangalore to Goa Flight
+          - link "delhi to jaipur" [ref=e843] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-jaipur-flights.html
+            - text: Delhi to Jaipur Flight
+          - link "delhi to srinagar" [ref=e844] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-srinagar-flights.html
+            - text: Delhi to Srinagar Flight
+          - link "mumbai to nagpur" [ref=e845] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/mumbai-to-nagpur-flights.html
+            - text: Mumbai to Nagpur Flight
+          - link "delhi to varanasi" [ref=e846] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-varanasi-flights.html
+            - text: Delhi to Varanasi Flight
+          - link "bangalore to ahmedabad" [ref=e847] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/bangalore-to-ahmedabad-flights.html
+            - text: Bangalore to Ahmedabad Flight
+          - link "mumbai to surat" [ref=e848] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/mumbai-to-surat-flights.html
+            - text: Mumbai to Surat Flight
+          - link "chennai to bangalore" [ref=e849] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/chennai-to-bangalore-flights.html
+            - text: Chennai to Bangalore Flight
+          - link "mumbai to udaipur" [ref=e850] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/mumbai-to-udaipur-flights.html
+            - text: Mumbai to Udaipur Flight
+          - link "delhi to raipur" [ref=e851] [cursor=pointer]:
+            - /url: https://www.yatra.com/flight-schedule/delhi-to-raipur-flights.html
+            - text: Delhi to Raipur Flight
+      - generic [ref=e852]:
+        - heading "Popular Domestic Flight Routes" [level=2] [ref=e853]
+        - list [ref=e854]:
+          - link "Kochi to Bangalore Flight" [ref=e855] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/kochi-to-bangalore-flights
+          - link "Bangalore to Coimbatore Flight" [ref=e856] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/bangalore-to-coimbatore-flights
+          - link "Hyderabad to Goa Flight" [ref=e857] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/hyderabad-to-goa-flights
+          - link "Silchar to Guwahati Flight" [ref=e858] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/silchar-to-guwahati-flights
+          - link "Kolkata to Varanasi Flight" [ref=e859] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/kolkata-to-varanasi-flights
+          - link "Shimla to Delhi Flight" [ref=e860] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/shimla-to-delhi-flights
+          - link "Hyderabad to Visakhapatnam Flight" [ref=e861] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/hyderabad-to-visakhapatnam-flights
+          - link "Indore to Delhi Flight" [ref=e862] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/indore-to-delhi-flights
+          - link "Delhi to Lucknow Flight" [ref=e863] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/delhi-to-lucknow-flights
+          - link "Trichy to Chennai Flight" [ref=e864] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/trichy-to-chennai-flights
+          - link "Goa to Mumbai Flight" [ref=e865] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/goa-to-mumbai-flights
+          - link "Delhi to Varanasi Flight" [ref=e866] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/delhi-to-varanasi-flights
+          - link "Delhi to Leh Flight" [ref=e867] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/delhi-to-leh-flights
+          - link "Guwahati to Kolkata Flight" [ref=e868] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/guwahati-to-kolkata-flights
+          - link "Chennai to Ahmedabad Flight" [ref=e869] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/chennai-to-ahmedabad-flights
+          - link "Mumbai to Kolkata Flight" [ref=e870] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/mumbai-to-kolkata-flights
+          - link "Chennai to Madurai Flight" [ref=e871] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/chennai-to-madurai-flights
+          - link "Mumbai to Goa Flight" [ref=e872] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/mumbai-to-goa-flights
+          - link "Delhi to Kolkata Flight" [ref=e873] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/delhi-to-kolkata-flights
+          - link "Bangalore to Mangalore Flight" [ref=e874] [cursor=pointer]:
+            - /url: https://www.yatra.com/cheap-flights/search/bangalore-to-mangalore-flights
+      - generic [ref=e875]:
+        - heading "Popular International Flight Routes" [level=2] [ref=e876]
+        - list [ref=e877]:
+          - link "Bangalore to Bali Flight" [ref=e878] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/bangalore-to-denpasar-bali-flights/
+          - link "Delhi to Bangkok Flight" [ref=e879] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/delhi-to-bangkok-flights/
+          - link "Mumbai to Bangkok Flight" [ref=e880] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/mumbai-to-bangkok-flights/
+          - link "Dubai to Ahmedabad Flight" [ref=e881] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/dubai-to-ahmedabad-flights
+          - link "Indore to Dubai Flight" [ref=e882] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/indore-to-dubai-flights/
+          - link "Mumbai to Riyadh Flight" [ref=e883] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/mumbai-to-riyadh-flights/
+          - link "Mumbai to London Flight" [ref=e884] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/mumbai-to-london-flights/
+          - link "Doha to Delhi Flight" [ref=e885] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/doha-to-delhi-flights/
+          - link "Delhi to Auckland Flight" [ref=e886] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/delhi-to-auckland-flights/
+          - link "Delhi to Istanbul Flight" [ref=e887] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/delhi-to-istanbul-flights/
+          - link "Dubai to Mangalore Flight" [ref=e888] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/dubai-to-mangalore-flights
+          - link "Mumbai to Paris Flight" [ref=e889] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/mumbai-to-paris-flights/
+          - link "Delhi to Seoul Flight" [ref=e890] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/delhi-to-seoul-flights/
+          - link "Dubai to Delhi Flight" [ref=e891] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/dubai-to-delhi-flights/
+          - link "Calicut to Dubai Flight" [ref=e892] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/calicut-to-dubai-flights
+          - link "Mumbai to Bali Flight" [ref=e893] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/mumbai-to-denpasar-bali-flights/
+          - link "Delhi to Vancouver Flight" [ref=e894] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/delhi-to-vancouver-flights/
+          - link "Dubai to Trichy Flight" [ref=e895] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/dubai-to-trichy-flights.html
+          - link "Doha to Kochi Flight" [ref=e896] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/doha-to-kochi-flights/
+          - link "Chennai to London Flight" [ref=e897] [cursor=pointer]:
+            - /url: https://www.yatra.com/international-flights/chennai-to-london-flights/
+      - generic "Yatra Products" [ref=e898]:
+        - heading "Yatra Products" [level=2] [ref=e899]
+        - list [ref=e900]:
+          - listitem [ref=e901]:
+            - link "Flights" [ref=e902] [cursor=pointer]:
+              - /url: https://www.yatra.com/flights
+          - listitem [ref=e903]:
+            - link "International Airlines" [ref=e904] [cursor=pointer]:
+              - /url: https://www.yatra.com/international-airlines/
+          - listitem [ref=e905]:
+            - link "Domestic Airlines" [ref=e906] [cursor=pointer]:
+              - /url: https://www.yatra.com/domestic-airlines/
+          - listitem [ref=e907]:
+            - link "Hotels" [ref=e908] [cursor=pointer]:
+              - /url: https://www.yatra.com/hotels
+          - listitem [ref=e909]:
+            - link "Trains" [ref=e910] [cursor=pointer]:
+              - /url: https://www.yatra.com/trains
+          - listitem [ref=e911]:
+            - link "Bus Booking" [ref=e912] [cursor=pointer]:
+              - /url: https://www.yatra.com/bus-booking
+          - listitem [ref=e913]:
+            - link "Holidays" [ref=e914] [cursor=pointer]:
+              - /url: https://www.yatra.com/holidays
+          - listitem [ref=e915]:
+            - link "International Holiday Packages" [ref=e916] [cursor=pointer]:
+              - /url: https://www.yatra.com/international-tour-packages
+          - listitem [ref=e917]:
+            - link "India Holiday Packages" [ref=e918] [cursor=pointer]:
+              - /url: https://www.yatra.com/india-tour-packages
+          - listitem [ref=e919]:
+            - link "Outstation Cabs" [ref=e920] [cursor=pointer]:
+              - /url: https://www.yatra.com/outstation-cabs/
+          - listitem [ref=e921]:
+            - link "Indian Monuments" [ref=e922] [cursor=pointer]:
+              - /url: https://www.yatra.com/indian-monuments
+          - listitem [ref=e923]:
+            - link "MICE" [ref=e924] [cursor=pointer]:
+              - /url: https://www.yatra.com/mice
+    - generic [ref=e926]:
+      - generic [ref=e927]:
+        - generic [ref=e929]:
+          - heading "Company Useful Links" [level=2] [ref=e931]
+          - generic [ref=e933]:
+            - paragraph [ref=e935] [cursor=pointer]:
+              - text: Company Information
+              - img "arrow_down" [ref=e936]
+            - paragraph [ref=e938] [cursor=pointer]:
+              - text: Investor Relations
+              - img "arrow_down" [ref=e939]
+            - paragraph [ref=e941] [cursor=pointer]:
+              - text: Partner With Yatra
+              - img "arrow_down" [ref=e942]
+            - paragraph [ref=e944] [cursor=pointer]: Yatra for Business
+            - paragraph [ref=e946] [cursor=pointer]:
+              - text: Customer Care
+              - img "arrow_down" [ref=e947]
+            - paragraph [ref=e949] [cursor=pointer]:
+              - text: Product Offerings
+              - img "arrow_down" [ref=e950]
+            - paragraph [ref=e952] [cursor=pointer]: Careers
+            - paragraph [ref=e954] [cursor=pointer]: Cautionary Notice
+            - paragraph [ref=e956] [cursor=pointer]:
+              - text: More
+              - img "arrow_down" [ref=e957]
+        - separator [ref=e959]
+      - generic [ref=e960]:
+        - generic [ref=e961]:
+          - generic [ref=e962]:
+            - heading "Our Official Websites" [level=2] [ref=e964]: "Our Official Websites :"
+            - link "Our Official Websites" [ref=e965]:
+              - link "Yatra" [ref=e966]:
+                - link "Yatra" [ref=e967] [cursor=pointer]:
+                  - /url: https://www.yatra.com
+                  - generic "Yatra" [ref=e968]
+                - paragraph [ref=e969] [cursor=pointer]: www.yatra.com
+              - link "Adventure Nation" [ref=e970]:
+                - link "Adventure Nation" [ref=e971] [cursor=pointer]:
+                  - /url: https://www.adventurenation.com
+                  - generic "Adventure Nation" [ref=e972]
+                - paragraph [ref=e973] [cursor=pointer]: www.adventurenation.com
+              - link "Travel Guru" [ref=e974]:
+                - link "Travel Guru" [ref=e975] [cursor=pointer]:
+                  - /url: http://www.travelguru.com
+                  - generic "Travel Guru" [ref=e976]
+                - paragraph [ref=e977] [cursor=pointer]: www.travelguru.com
+              - link "Yatra Exotic Routes" [ref=e978]:
+                - link "Yatra Exotic Routes" [ref=e979] [cursor=pointer]:
+                  - /url: http://www.yatraexoticroutes.com
+                  - generic "Yatra Exotic Routes" [ref=e980]
+                - paragraph [ref=e981] [cursor=pointer]: www.yatraexoticroutes.com
+              - link "TSI Yatra" [ref=e982]:
+                - link "TSI Yatra" [ref=e983] [cursor=pointer]:
+                  - /url: https://www.yatra.com/travel-agents
+                  - generic "TSI Yatra" [ref=e984]
+                - paragraph [ref=e985] [cursor=pointer]: www.yatra.com/travel-agents
+          - generic [ref=e986]:
+            - heading "Our Social Media Handles" [level=2] [ref=e988]: "Our Social Media Handles :"
+            - generic [ref=e989]:
+              - group "Facebook" [ref=e990]:
+                - img "Facebook" [ref=e991] [cursor=pointer]
+                - paragraph [ref=e992] [cursor=pointer]: www.facebook.com/Yatra
+              - group "LinkedIn" [ref=e993]:
+                - img "LinkedIn" [ref=e994] [cursor=pointer]
+                - paragraph [ref=e995] [cursor=pointer]: www.linkedin.com/company/yatra-online-ltd
+              - group "YouTube" [ref=e996]:
+                - img "YouTube" [ref=e997] [cursor=pointer]
+                - paragraph [ref=e998] [cursor=pointer]: www.youtube.com/user/yatratravel
+              - group "Instagram" [ref=e999]:
+                - img "Instagram" [ref=e1000] [cursor=pointer]
+                - paragraph [ref=e1001] [cursor=pointer]: www.instagram.com/yatradotcom/
+              - group "X" [ref=e1002]:
+                - img "X" [ref=e1003] [cursor=pointer]
+                - paragraph [ref=e1004] [cursor=pointer]: www.twitter.com/YatraOfficial
+        - separator [ref=e1005]
+      - generic [ref=e1006]:
+        - generic [ref=e1008]:
+          - heading "Security & Payments" [level=2] [ref=e1009]
+          - generic [ref=e1010]:
+            - img "Ico Secured Sites" [ref=e1011]
+            - img "Veri sign secured" [ref=e1012]
+            - img "Net Banking" [ref=e1013]
+            - img "Easy Emi option" [ref=e1014]
+            - img "Visa Card" [ref=e1015]
+            - img "Master Card" [ref=e1016]
+            - img "Rupay Card" [ref=e1017]
+            - img "Diners Club" [ref=e1018]
+            - img "American Express" [ref=e1019]
+        - separator [ref=e1020]
+      - paragraph [ref=e1023]: Copyright © 2026 Yatra Online Limited (formerly known as Yatra Online Private Limited), India. All rights reserved
+  - alert [ref=e1024]
+  - button "Open chat" [ref=e1026] [cursor=pointer]:
+    - img "Chat icon" [ref=e1027]
+```
+
+# Test source
+
+```ts
+  1  | import {test} from '@playwright/test';
+  2  | 
+  3  | test('yasta website and handling list items', async ({ page }) => {
+  4  | 
+  5  | await page.goto('https://www.yatra.com/');
+  6  | const departure = await page.locator("//div[contains(@aria-label,'Departure From')]");
+  7  | 
+  8  | await departure.click();
+  9  | 
+  10 | await departure.pressSequentially("New");
+  11 | 
+> 12 | await page.locator(".MuiBox-root").getByRole('listitem').filter({ hasText: 'New Bern' }).click();   
+     |                                                                                          ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  13 | await page.waitForTimeout(3000);
+  14 | 
+  15 | 
+  16 | 
+  17 | 
+  18 | 
+  19 | 
+  20 | 
+  21 | }
+  22 | )
+```
